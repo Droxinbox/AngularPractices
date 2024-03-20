@@ -4,13 +4,18 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
+import { CapitalizeDirective } from './directives/capitalize.directive';
+import { FormsModule } from '@angular/forms'; // ngModel
+
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    CapitalizeDirective,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule // ngModel
   ],
   providers: [],
   bootstrap: [AppComponent]
