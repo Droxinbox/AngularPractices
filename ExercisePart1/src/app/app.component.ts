@@ -7,4 +7,13 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'ExercisePart1';
+
+  message: string = "I was triggered by an event";
+
+  alertNotification() {
+    alert(this.message);
+  }
+
+  greetings: string = "Hello World"
+
 }
