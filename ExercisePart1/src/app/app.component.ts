@@ -7,6 +7,6 @@ import { Component } from '@angular/core';
 })
 
 export class AppComponent {
-  title = 'ExercisePart1';
-  textValue: string = "";
+  title: string = 'ExercisePart1';
+  textValue: string = "ESTO es UNA prueba de CaPiTalIzar uN tExTo";
 }

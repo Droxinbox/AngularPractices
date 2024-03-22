@@ -1,13 +1,7 @@
-import { Directive, ElementRef } from "@angular/core";
+import { Directive } from "@angular/core";
 
 @Directive({
-    selector: "[Capitalize]"
+    selector: "[capitalize]"
 })
 
-export class CapitalizeDirective {
-
-    constructor (private variable: ElementRef) {
-        variable.nativeElement.style.textTransform = 'capitalize';
-    }
-
-}
+export class capitalizeDirective {}
