@@ -1,0 +1,35 @@
+<div>
+    <div>
+        <div class="p-2" style="background-color: black; color: white;">
+            <h2>Data-binding</h2>
+        </div>
+        <div class="container">
+            <div class="text-center mt-3">
+                <button class="btn btn-success" (click)="alertNotification()">Click me !!!</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="mt-3">
+        <div class="p-2" style="background-color: black; color: white;">
+            <h2>One way data binding</h2>
+        </div>
+        <div class="mt-3 container">
+            <label for="" class="form-label">Ingresa texto:</label>
+            <input type="text" class="form-control">
+        </div>
+    </div>
+
+    <div class="mt-3">
+        <div class="p-2" style="background-color: black; color: white;">
+            <h2>Two way data binding</h2>
+        </div>
+        <div class="mt-3 container">
+            <div>
+                <span>{{greetings}}</span>
+            </div>
+            <label for="" class="form-label">Ingresa texto:</label>
+            <input type="text" class="form-control" [(ngModel)]="greetings" value="{{greetings}}">
+        </div>
+    </div>
+</div>
