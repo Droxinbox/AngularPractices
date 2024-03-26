@@ -6,7 +6,4 @@ import { Component } from '@angular/core';
   styleUrl: './app.component.css'
 })
 
-export class AppComponent {
-  title: string = 'ExercisePart1';
-  textValue: string = "ESTO es UNA prueba de CaPiTalIzar uN tExTo";
-}
+export class AppComponent {}
