@@ -2,44 +2,7 @@
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
-  <div>
-    <div class="p-2" style="background-color: black; color: white;">
-      <h2>NgClass</h2>
-    </div>
-
-    <div class="text-center mt-3 mb-3">
-      <span class="h5" [ngClass]="red" >Hello</span>
-    </div>
-
-    <div class="text-center mt-3 mb-3">
-      <button class="btn btn-success" style="border-radius: 25px;" (click)="stateChangeClass()" >Click me !!</button>
-    </div>
-
-    <div class="text-center mt-3 mb-3">
-      <span class="h5" [ngClass]=" activeClass ? 'redText' : 'purpleText' " >Hello</span>
-      <p class="h5" >Status Active: {{ activeClass }} </p>
-    </div>
-  </div>
-
-  <div>
-    <div class="p-2" style="background-color: black; color: white;">
-      <h2>NgStyle</h2>
-    </div>
-
-    <div class="text-center mt-3 mb-3">
-      <span class="h5" [ngStyle]="{'color': 'red'}" >Hello</span>
-    </div>
-
-    <div class="text-center mt-3 mb-3">
-      <button class="btn btn-warning" style="border-radius: 25px;" (click)="stateChangeStyle()" >Click me !!</button>
-    </div>
-
-    <div class="text-center mt-3 mb-3">
-      <span class="h5" [ngStyle]="{'color' : activeStyle ? 'red' : 'green'}" >Hello</span>
-      <p class="h5" >Status Active: {{ activeStyle }} </p>
-    </div>
-  </div>
-  
+  <app-attribute-directives></app-attribute-directives>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   
