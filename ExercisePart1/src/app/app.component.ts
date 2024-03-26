@@ -6,9 +6,4 @@ import { Component } from '@angular/core';
   styleUrl: './app.component.css'
 })
 
-export class AppComponent {
-  title = 'ExercisePart1';
-
-  test: string[] = ["A", "B", "C"];
-
-}
+export class AppComponent {}

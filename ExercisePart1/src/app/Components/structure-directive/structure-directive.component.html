@@ -1,0 +1,45 @@
+<div>
+    <div>
+        <div class="p-2" style="background-color: black; color: white;">
+            <h2>NgFor</h2>
+        </div>
+
+        <div class="mt-3 mb-3">
+            <ul class="list-group" style="max-width: 400px; border: 2px solid; margin: 10px;">
+                <li class="list-group-item" *ngFor="let item of test; index as i;">
+                    {{ i + 1 }}.- {{ item }}
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div>
+        <div class="p-2" style="background-color: black; color: white;">
+            <h2>NgFor & NgIF</h2>
+        </div>
+
+        <div class="mt-3 mb-3">
+            <ul class="list-group" style="max-width: 400px; border: 2px solid; margin: 10px;">
+                <li class="list-group-item" *ngFor="let item of test; index as i">
+                    <span *ngIf="item == 'B'" >{{ i + 1 }}.-  {{ item }}</span>
+                </li>
+            </ul>
+        </div>
+        </div>
+
+        <div>
+        <div class="p-2" style="background-color: black; color: white;">
+            <h2>NgSwitch</h2>
+        </div>
+
+        <div class="mt-3 mb-3">
+            <ul class="list-group" style="max-width: 400px; border: 2px solid; margin: 10px;">
+                <li class="list-group-item" *ngFor="let item of test" [ngSwitch]="item">
+                    <span *ngSwitchCase="'A'" >1</span>
+                    <span *ngSwitchCase="'B'" >2</span>
+                    <span *ngSwitchCase="'C'" >3</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
