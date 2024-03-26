@@ -1,23 +1,23 @@
-import { Component, NgModule } from '@angular/core';
+import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { MyFirstComponentComponent } from '../my-first-component/my-first-component.component';
+import { MyFirstComponent } from '../Components/my-first/my-first.component';
 import { Routes, RouterModule } from '@angular/router';
 
 const routes: Routes = [
-  { path: 'MyFirstComponent', component: MyFirstComponentComponent }
+  { path: 'MyFirstComponent', component: MyFirstComponent }
 ];
 
 RouterModule.forChild(routes);
 
 @NgModule({
   declarations: [
-    MyFirstComponentComponent
+    MyFirstComponent
   ],
   imports: [
     CommonModule
   ],
   exports: [
-    MyFirstComponentComponent
+    MyFirstComponent
   ]
 })
 
