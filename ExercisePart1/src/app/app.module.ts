@@ -13,7 +13,9 @@ import { StructureDirectiveComponent } from './Components/structure-directive/st
 import { AttributeDirectivesComponent } from './Components/attribute-directives/attribute-directives.component';
 
 import { capitalizeDirective } from './directives/capitalize.directive';
-import { CustomDirectiveComponent } from './Components/custom-directive/custom-directive.component'; // ngModel
+import { CustomDirectiveComponent } from './Components/custom-directive/custom-directive.component';
+import { PipesComponent } from './Components/pipes/pipes.component';
+import { CapitaPipePipe } from './Pipes/capita-pipe.pipe'; // ngModel
 
 @NgModule({
   declarations: [
@@ -23,6 +25,8 @@ import { CustomDirectiveComponent } from './Components/custom-directive/custom-d
     AttributeDirectivesComponent,
     capitalizeDirective,
     CustomDirectiveComponent,
+    PipesComponent,
+    CapitaPipePipe,
   ],
   imports: [
     BrowserModule,
