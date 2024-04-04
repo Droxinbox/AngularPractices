@@ -10,7 +10,6 @@ import { StructureDirectiveComponent } from './Components/structure-directive/st
 import { AttributeDirectivesComponent } from './Components/attribute-directives/attribute-directives.component';
 
 import { capitalizeDirective } from './directives/capitalize.directive';
-import { FormsModule } from '@angular/forms';
 import { CustomDirectiveComponent } from './Components/custom-directive/custom-directive.component'; // ngModel
 
 
