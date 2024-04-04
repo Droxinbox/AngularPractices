@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { AttributeDirectivesComponent } from './Components/attribute-directives/attribute-directives.component';
 
 import { capitalizeDirective } from './directives/capitalize.directive';
 import { FormsModule } from '@angular/forms';
@@ -11,6 +12,7 @@ import { CustomDirectiveComponent } from './Components/custom-directive/custom-d
 @NgModule({
   declarations: [
     AppComponent,
+    AttributeDirectivesComponent,
     capitalizeDirective,
     CustomDirectiveComponent,
   ],
@@ -22,4 +24,4 @@ import { CustomDirectiveComponent } from './Components/custom-directive/custom-d
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}
