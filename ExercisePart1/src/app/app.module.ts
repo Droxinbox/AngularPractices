@@ -12,7 +12,7 @@ import { CustomDirectiveComponent } from './Components/custom-directive/custom-d
 @NgModule({
   declarations: [
     AppComponent,
-    AttributeDirectivesComponent
+    AttributeDirectivesComponent,
     capitalizeDirective,
     CustomDirectiveComponent,
   ],
