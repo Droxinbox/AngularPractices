@@ -3,15 +3,19 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+
+import { StructureDirectiveComponent } from './Components/structure-directive/structure-directive.component';
 import { AttributeDirectivesComponent } from './Components/attribute-directives/attribute-directives.component';
 
 import { capitalizeDirective } from './directives/capitalize.directive';
 import { FormsModule } from '@angular/forms';
 import { CustomDirectiveComponent } from './Components/custom-directive/custom-directive.component'; // ngModel
 
+
 @NgModule({
   declarations: [
     AppComponent,
+    StructureDirectiveComponent,
     AttributeDirectivesComponent,
     capitalizeDirective,
     CustomDirectiveComponent,
