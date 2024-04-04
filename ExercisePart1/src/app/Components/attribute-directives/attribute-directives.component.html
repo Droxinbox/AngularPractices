@@ -1,0 +1,41 @@
+<div>
+
+    <div>
+        <div class="p-2" style="background-color: black; color: white;">
+            <h2>NgClass</h2>
+        </div>
+
+        <div class="text-center mt-3 mb-3">
+            <span class="h5" [ngClass]="red" >Hello</span>
+        </div>
+
+        <div class="text-center mt-3 mb-3">
+            <button class="btn btn-success" style="border-radius: 25px;" (click)="stateChangeClass()" >Click me !!</button>
+        </div>
+
+        <div class="text-center mt-3 mb-3">
+            <span class="h5" [ngClass]=" activeClass ? 'redText' : 'purpleText' " >Hello</span>
+            <p class="h5" >Status Active: {{ activeClass }} </p>
+        </div>
+    </div>
+
+    <div>
+        <div class="p-2" style="background-color: black; color: white;">
+            <h2>NgStyle</h2>
+        </div>
+
+        <div class="text-center mt-3 mb-3">
+            <span class="h5" [ngStyle]="{'color': 'red'}" >Hello</span>
+        </div>
+
+        <div class="text-center mt-3 mb-3">
+            <button class="btn btn-warning" style="border-radius: 25px;" (click)="stateChangeStyle()" >Click me !!</button>
+        </div>
+
+        <div class="text-center mt-3 mb-3">
+            <span class="h5" [ngStyle]="{'color' : activeStyle ? 'red' : 'green'}" >Hello</span>
+            <p class="h5" >Status Active: {{ activeStyle }} </p>
+        </div>
+    </div>
+
+</div>

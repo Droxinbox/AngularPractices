@@ -6,17 +6,29 @@ import { AppComponent } from './app.component';
 import { FormsModule } from '@angular/forms';
 import { DataBindingComponent } from './Components/data-binding/data-binding.component';
 
+import { StructureDirectiveComponent } from './Components/structure-directive/structure-directive.component';
+import { AttributeDirectivesComponent } from './Components/attribute-directives/attribute-directives.component';
+
+import { capitalizeDirective } from './directives/capitalize.directive';
+import { FormsModule } from '@angular/forms';
+import { CustomDirectiveComponent } from './Components/custom-directive/custom-directive.component'; // ngModel
+
+
 @NgModule({
   declarations: [
     AppComponent,
-    DataBindingComponent
+    DataBindingComponent,
+    StructureDirectiveComponent,
+    AttributeDirectivesComponent,
+    capitalizeDirective,
+    CustomDirectiveComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule // ngModel
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}
