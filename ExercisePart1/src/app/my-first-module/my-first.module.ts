@@ -21,5 +21,5 @@ RouterModule.forChild(routes);
   ]
 })
 
-export class MyFirstModuleModule { 
+export class MyFirstModule { 
 }
