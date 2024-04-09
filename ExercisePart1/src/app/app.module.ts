@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { Injectable, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -14,6 +14,14 @@ import { AttributeDirectivesComponent } from './Components/attribute-directives/
 
 import { capitalizeDirective } from './directives/capitalize.directive';
 import { CustomDirectiveComponent } from './Components/custom-directive/custom-directive.component'; // ngModel
+import { ProvidersModule } from './Modules/providers/providers.module';
+
+@Injectable({
+  providedIn: 'root'
+})
+export class SecondInjectable {
+  data: string = "I'm a variable inside a singleton";
+}
 
 @NgModule({
   declarations: [
@@ -28,6 +36,7 @@ import { CustomDirectiveComponent } from './Components/custom-directive/custom-d
     BrowserModule,
     AppRoutingModule,
     MyFirstModule,
+    ProvidersModule,
     FormsModule // ngModel
   ],
   providers: [],
